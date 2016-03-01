@@ -77,7 +77,7 @@ CREATE VIEW player_matches AS
        FROM standings_odd, standings_even
       WHERE (standings_odd.row_num + 1) = standings_even.row_num;
 
--- Create a view for previous matches to help prevent rematches
+-- Create a view for previous matches to help prevent rematches.
 CREATE VIEW previous_matches AS
      SELECT player_1,
             player_2
