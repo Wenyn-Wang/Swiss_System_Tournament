@@ -10,7 +10,7 @@ import psycopg2
 
 
 def connect():
-    """Connect to the PostgreSQL database.  Returns a database connection."""
+    """Connect to the PostgreSQL database. Returns a database connection."""
     try:
         # Connect to the database
         db = psycopg2.connect("dbname=tournament")
